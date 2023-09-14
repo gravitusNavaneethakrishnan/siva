@@ -24,7 +24,7 @@ export function responsiveFontSizes({ sm, md, lg }) {
 
 // ----------------------------------------------------------------------
 
-const FONT_PRIMARY = 'Public Sans, sans-serif'; // Google Font
+const FONT_PRIMARY = 'Baskervville'; // Google Font
 // const FONT_SECONDARY = 'CircularStd, sans-serif'; // Local Font
 
 const typography = {
@@ -32,12 +32,12 @@ const typography = {
   fontWeightRegular: 400,
   fontWeightMedium: 600,
   fontWeightBold: 700,
-  h1: {
-    fontWeight: 800,
-    lineHeight: 80 / 64,
-    fontSize: pxToRem(40),
-    ...responsiveFontSizes({ sm: 52, md: 58, lg: 64 }),
-  },
+  // h1: {
+  //   fontWeight: 800,
+  //   lineHeight: 80 / 64,
+  //   fontSize: pxToRem(40),
+  //   ...responsiveFontSizes({ sm: 52, md: 58, lg: 64 }),
+  // },
   h2: {
     fontWeight: 800,
     lineHeight: 64 / 48,
@@ -78,10 +78,10 @@ const typography = {
     lineHeight: 22 / 14,
     fontSize: pxToRem(14),
   },
-  body1: {
-    lineHeight: 1.5,
-    fontSize: pxToRem(16),
-  },
+  // body1: {
+  //   lineHeight: 1.5,
+  //   fontSize: pxToRem(16),
+  // },
   body2: {
     lineHeight: 22 / 14,
     fontSize: pxToRem(14),
@@ -102,6 +102,35 @@ const typography = {
     fontSize: pxToRem(14),
     textTransform: 'capitalize',
   },
+  //
+  body1: {
+    fontFamily: 'Baskervville',
+    fontSize: pxToRem(16),
+    ...responsiveFontSizes({ xs: 10, sm: 12, md: 14, lg: 16 }),
+    // fontSize: '16px',
+    fontWeight: '400',
+  },
+  title1: {
+    fontFamily: 'Baskervville',
+    fontSize: pxToRem(32),
+    ...responsiveFontSizes({ sm: 26, md: 28, lg: 32 }),
+    // fontSize: '32px',
+    fontWeight: '700',
+  },
+  h1: {
+    fontSize: pxToRem(32),
+    ...responsiveFontSizes({ sm: 40, md: 44, lg: 56 }),
+    // fontSize:'56px',
+    fontFamily: 'Baskervville',
+    fontWeight: '700',
+  },
+  subbody: {
+    fontSize: pxToRem(24),
+    ...responsiveFontSizes({ sm: 16, md: 20, lg: 24 }),
+    // fontSize:'56px',
+    fontFamily: 'Baskervville',
+    fontWeight: '700',
+  }
 };
 
 export default typography;

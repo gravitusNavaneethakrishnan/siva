@@ -13,9 +13,10 @@ const StyledHeader = styled('header')(({ theme }) => ({
   width: '100%',
   position: 'absolute',
   padding: theme.spacing(3, 3, 0),
+  backgroundColor: '#000',
   [theme.breakpoints.up('sm')]: {
-    padding: theme.spacing(5, 5, 0),
-  },
+  padding: theme.spacing(5, 5, 0),
+},
 }));
 
 // ----------------------------------------------------------------------
@@ -24,10 +25,8 @@ export default function SimpleLayout() {
   return (
     <>
       <StyledHeader>
-        <Logo />
+        <Outlet />
       </StyledHeader>
-
-      <Outlet />
     </>
   );
 }

@@ -1,30 +1,26 @@
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Box, Stack, AppBar, Toolbar, IconButton } from '@mui/material';
+import { Box, Stack, AppBar, Toolbar, Typography, ListItem, IconButton, Drawer } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import { Link as ScrollLink } from 'react-scroll';
+import CloseIcon from '@mui/icons-material/Close';
 // utils
 import { bgBlur } from '../../../utils/cssStyles';
-// components
-import Iconify from '../../../components/iconify';
 //
-import Searchbar from './Searchbar';
-import AccountPopover from './AccountPopover';
-import LanguagePopover from './LanguagePopover';
-import NotificationsPopover from './NotificationsPopover';
+import Sivakamu from '../../../images/Sivakamu.svg';
 
 // ----------------------------------------------------------------------
 
-const NAV_WIDTH = 280;
-
 const HEADER_MOBILE = 64;
-
 const HEADER_DESKTOP = 92;
 
 const StyledRoot = styled(AppBar)(({ theme }) => ({
   ...bgBlur({ color: theme.palette.background.default }),
   boxShadow: 'none',
+  backgroundColor: '#000',
   [theme.breakpoints.up('lg')]: {
-    width: `calc(100% - ${NAV_WIDTH + 1}px)`,
+    // width: `calc(100% - ${NAV_WIDTH + 1}px)`,
   },
 }));
 
@@ -36,43 +32,179 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   },
 }));
 
-// ----------------------------------------------------------------------
+function Header() {
+  const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 
-Header.propTypes = {
-  onOpenNav: PropTypes.func,
-};
+  const toggleMobileDrawer = () => {
+    setIsMobileDrawerOpen(!isMobileDrawerOpen);
+  };
 
-export default function Header({ onOpenNav }) {
   return (
-    <StyledRoot>
-      <StyledToolbar>
-        <IconButton
-          onClick={onOpenNav}
-          sx={{
-            mr: 1,
-            color: 'text.primary',
-            display: { lg: 'none' },
-          }}
-        >
-          <Iconify icon="eva:menu-2-fill" />
-        </IconButton>
+    <>
+      <StyledRoot>
+        <StyledToolbar>
+          <ListItem>
+            <ScrollLink to="home" duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }}>
+              <img src={Sivakamu} alt='Sivakamu' />
+            </ScrollLink>
+          </ListItem>
+          <Box sx={{ flexGrow: 1 }} />
+          <Stack
+            direction='row'
+            sx={{ display: { xs: 'none', lg: 'flex' } }}
+            alignItems="center"
+            spacing={{
+              xs: 0.5,
+              sm: 1,
+            }}
+          >
+            <ListItem>
+              <ScrollLink
+                spy
+                smooth
+                offset={-100}
+                to="home"
+                duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+                <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  Home
+                </Typography>
+              </ScrollLink>
+            </ListItem>
+            <ListItem>
+              <ScrollLink
+                to="about"
+                spy
+                smooth
+                offset={-100}
+                duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+                <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  About
+                </Typography>
+              </ScrollLink>
+            </ListItem><ListItem>
+              <ScrollLink
+                to="service"
+                spy
+                smooth
+                offset={-100}
+                duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+                <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  Services
+                </Typography>
+              </ScrollLink>
+            </ListItem>
+            <ListItem>
+              <ScrollLink
+                to="project"
+                spy
+                smooth
+                offset={-100}
+                duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+                <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  Projects
+                </Typography>
+              </ScrollLink>
+            </ListItem>
+            <ListItem>
+              <ScrollLink
+                to="contact"
+                spy
+                smooth
+                offset={-100}
+                duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+                <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  Contact
+                </Typography>
+              </ScrollLink>
+            </ListItem>
+          </Stack>
+          {/* For mobile view, show a menu icon that opens the drawer */}
 
-        <Searchbar />
-        <Box sx={{ flexGrow: 1 }} />
+          <IconButton
+            color="inherit"
+            edge="end"
+            onClick={toggleMobileDrawer}
+            sx={{ display: { xs: 'block', lg: 'none' } }}
+          >
+            <MenuIcon />
+          </IconButton>
+        </StyledToolbar>
+      </StyledRoot>
+
+      <Drawer
+        anchor="right"
+        open={isMobileDrawerOpen}
+        onClose={toggleMobileDrawer}
+        sx={{
+          '& .MuiDrawer-paper': {
+            width: '250px',
+            backgroundColor: '#000', // Add the background color here
+          },
+        }}
+      >
+        <Stack alignItems='end' pt={2} pr={2}>
+          <IconButton
+            onClick={toggleMobileDrawer}
+            color='#fff'
+          >
+            <CloseIcon />
+          </IconButton>
+        </Stack>
 
         <Stack
-          direction="row"
+          direction="column"
           alignItems="center"
-          spacing={{
-            xs: 0.5,
-            sm: 1,
-          }}
+          spacing={2}
+          sx={{ mt: '20px', paddingLeft: '12px' }}
         >
-          <LanguagePopover />
-          <NotificationsPopover />
-          <AccountPopover />
+          <ListItem>
+            <ScrollLink
+              to="home"
+              duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+              <Typography button onClick={toggleMobileDrawer} variant='body1' sx={{ color: '#E8E8E8' }}>
+                Home
+              </Typography>
+            </ScrollLink>
+          </ListItem>
+          <ListItem>
+            <ScrollLink
+              to="about"
+              duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+              <Typography button onClick={toggleMobileDrawer} variant='body1' sx={{ color: '#E8E8E8' }}>
+                About
+              </Typography>
+            </ScrollLink>
+          </ListItem><ListItem>
+            <ScrollLink
+              to="service"
+              duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+              <Typography button onClick={toggleMobileDrawer} variant='body1' sx={{ color: '#E8E8E8' }}>
+                Services
+              </Typography>
+            </ScrollLink>
+          </ListItem>
+          <ListItem>
+            <ScrollLink
+              to="project"
+              duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+              <Typography button onClick={toggleMobileDrawer} variant='body1' sx={{ color: '#E8E8E8' }}>
+                Projects
+              </Typography>
+            </ScrollLink>
+          </ListItem>
+          <ListItem>
+            <ScrollLink
+              to="contact"
+              duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
+              <Typography button onClick={toggleMobileDrawer} variant='body1' sx={{ color: '#E8E8E8' }}>
+                Contact
+              </Typography>
+            </ScrollLink>
+          </ListItem>
         </Stack>
-      </StyledToolbar>
-    </StyledRoot>
+      </Drawer>
+    </>
   );
 }
+
+export default Header;
