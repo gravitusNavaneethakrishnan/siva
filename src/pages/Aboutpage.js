@@ -8,17 +8,17 @@ const Aboutpage = () => {
       pt={{ md: 6, sm: 8, xs: 6, lg: 12 }}
       pb={{ md: 6, sm: 8, xs: 6, lg: 12 }}
     >
-      <Grid container spacing={2} pt={8}>
+      <Grid container spacing={2} pt={8} >
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <Stack direction="column" spacing={3} alignItems={{ md: 'center', lg: 'flex-start' }} >
+          <Stack pr={5} direction="column" spacing={3} alignItems={{ md: 'center', lg: 'flex-start' }} >
             <Typography sx={{ color: '#E8E8E8' }} variant='h1'>
               Hi, I’m Sivakamu <br />
               Designer & Developer.
             </Typography>
             <Typography sx={{ color: '#E8E8E8' }} variant='body1'>
-              I’m a UI/UX designer turned software developer with 3+ years of <br />
-              experience. Producing high-quality UX design solutions through <br />
-              wireframes, visual and graphic designs, flow diagrams, storyboards and <br />
+              I’m a UI/UX designer turned software developer with 3+ years of   
+              experience. Producing high-quality UX design solutions through  
+              wireframes, visual and graphic designs, flow diagrams, storyboards and  
               prototypes.
             </Typography>
             <Stack direction='row' spacing={3}>
