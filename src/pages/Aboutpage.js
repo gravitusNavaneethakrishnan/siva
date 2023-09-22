@@ -30,7 +30,7 @@ const Aboutpage = () => {
               </Button>
             </Stack>
             <Button disableRipple variant='aboutbutton'>
-              UX Research
+              UI Develop
             </Button>
           </Stack>
         </Grid>
