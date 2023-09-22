@@ -3,28 +3,24 @@ import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 import backgroundImage from '../images/Hero_image.jpg';
+import './Homepage.css'
 
 const fontSize = "56px";
 
 const centerStyle = {
-  // position: "absolute",
-  // top: "49.5%",
   left: 0,
   right: 0,
-  // marginTop: `calc(${fontSize} * 1.5 / -2)`
 };
 
 const carouselStyle = {
   position: "relative",
   width: "100%",
   textAlign: "center",
-  fontSize: `calc(${fontSize})`,
   lineHeight: `calc(${fontSize} * 1.5)`,
   height: `calc(${fontSize} * 1.5)`
 };
 
 const changeOuterStyle = {
-  // position: "absolute",
   top: 0,
   left: "46%",
   textAlign: "left",
@@ -38,10 +34,9 @@ const changeInnerStyle = {
 };
 
 const elementStyle = {
-  color:'#FF8A00',
+  color: '#FF8A00',
   display: "block",
   fontWeight: 700,
-  // textShadow: "2px 2px 2px #FF8A00"
 };
 
 const keyframesRotate = {
@@ -90,12 +85,12 @@ const Homepage = () => {
         }}>
         <Stack alignItems='center' textAlign='center'>
           <Stack direction='row' spacing={4} alignItems='center' textAlign='center'>
-            
+
             <Typography variant='h1' sx={{ color: '#fff' }}>
               Hello I
             </Typography>
-             
-           
+
+
             <div className="frame">
               <div style={centerStyle} className="center">
                 <div style={carouselStyle} className="carousel">
@@ -110,12 +105,6 @@ const Homepage = () => {
                       <div style={elementStyle} className="element">
                         Research
                       </div>
-                      {/* <div style={elementStyle} className="element">
-                        
-                      </div>
-                      <div style={elementStyle} className="element">
-                        
-                      </div> */}
                     </div>
                   </div>
                 </div>
