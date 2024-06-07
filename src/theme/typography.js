@@ -110,6 +110,13 @@ const typography = {
     // fontSize: '16px',
     fontWeight: '400',
   },
+  body3: {
+    fontFamily: 'Baskervville',
+    fontSize: pxToRem(16),
+    ...responsiveFontSizes({ xs: 12, sm: 14, md: 16, lg: 18 }),
+    // fontSize: '16px',
+    fontWeight: '500',
+  },
   title1: {
     fontFamily: 'Baskervville',
     fontSize: pxToRem(32),
