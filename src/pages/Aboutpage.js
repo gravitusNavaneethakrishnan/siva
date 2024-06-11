@@ -1,5 +1,4 @@
 import { Button, Grid, Stack, Typography } from '@mui/material';
-import React from 'react'
 import aboutimg from '../images/aboutimg.svg';
 
 const Aboutpage = () => {
@@ -13,24 +12,26 @@ const Aboutpage = () => {
           <Stack pr={5} direction="column" spacing={3} alignItems={{ md: 'center', lg: 'flex-start' }} >
             <Typography sx={{ color: '#E8E8E8' }} variant='h1'>
               Hi, I’m Sivakamu <br />
-              Designer & Developer.
+              Front-End Developer.
             </Typography>
-            <Typography sx={{ color: '#E8E8E8' }} variant='body1'>
-              I’m a UI/UX designer turned software developer with 3+ years of   
-              experience. Producing high-quality UX design solutions through  
-              wireframes, visual and graphic designs, flow diagrams, storyboards and  
-              prototypes.
+            <Typography sx={{ color: '#E8E8E8' }} variant='body3'>
+              👋 As I transitioned from UI/UX design,
+              I've become a dedicated front-end developer focused on Flutter & ReactJS.
+              Proficient in HTML, CSS, JS, and skilled in Riverpod for state management.
+              With a strong foundation in Data Structures & Algorithms, I prioritize code efficiency.
+              Excel in Firebase Cloud Messaging, committed to delivering top-notch user experiences through innovation.
+              Let's connect and elevate your projects together !
             </Typography>
             <Stack direction='row' spacing={3}>
               <Button disableRipple variant='aboutbutton'>
-                UX Research
+                Flutter
               </Button>
               <Button disableRipple variant='aboutbutton'>
-                UI Design
+                React js
               </Button>
             </Stack>
             <Button disableRipple variant='aboutbutton'>
-              UI Develop
+              UI/UX
             </Button>
           </Stack>
         </Grid>

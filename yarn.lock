@@ -1710,7 +1710,7 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@mui/material@^5.0.0", "@mui/material@^5.14.8":
+"@mui/material@^5.0.0", "@mui/material@^5.11.10":
   version "5.14.8"
   resolved "https://registry.npmjs.org/@mui/material/-/material-5.14.8.tgz"
   integrity sha512-fqvDGGF1pXwOOL/f0Gw+KHo/67hasRpf2ApTIJkbuONOk9AUb2jnYMEqCWmL2sUcbbE3ShMbHl8N7HPSsRv1/A==
@@ -1748,7 +1748,7 @@
     prop-types "^15.8.1"
     react "^18.2.0"
 
-"@mui/system@^5.10.9", "@mui/system@^5.14.8", "@mui/system@^5.14.9":
+"@mui/system@^5.10.9", "@mui/system@^5.14.8":
   version "5.14.9"
   resolved "https://registry.npmjs.org/@mui/system/-/system-5.14.9.tgz"
   integrity sha512-Z00Wj590QXk5+SIxmxayBo7SWrao+y433LKGChneJxO4QcT/caSCeEWtyeoLs1Q8ys0zOzl2kkKee6n8TaKzhQ==

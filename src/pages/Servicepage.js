@@ -1,5 +1,4 @@
 import { Card, Grid, Stack, Typography } from '@mui/material';
-import React from 'react'
 import Featuresimg1 from '../images/featuresimg_1.svg';
 import Featuresimg2 from '../images/featuresimg_2.svg';
 import Featuresimg3 from '../images/featuresimg_3.svg';
@@ -17,7 +16,7 @@ const Servicepage = () => {
               Disciplines
             </Typography>
             <Typography variant='body1' sx={{ color: '#E8E8E8', textAlign: 'center', justifyContent: 'center' }}>
-              I’m a UI/UX designer turned software developer with 3+ years of experience.
+              Crafting Seamless Experiences: UI/UX Design & Development | Flutter & ReactJS Expertise
             </Typography>
           </Stack>
         </Grid>
@@ -50,10 +49,10 @@ const Servicepage = () => {
                 </Stack>
                 <Stack spacing={1} pt={3}>
                   <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
-                    UI / UX Design
+                    Flutter Developer
                   </Typography>
                   <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
-                    Leverage a human-centered design process to deliver an easy-to-use user interface and user experience.
+                    Empowering Users Through Intuitive Interfaces: Front-End Flutter Developer Crafting Engaging Experiences
                   </Typography>
                 </Stack>
 
@@ -87,10 +86,10 @@ const Servicepage = () => {
                 </Stack>
                 <Stack spacing={1} pt={3}>
                   <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
-                    Static Websites
+                    React js
                   </Typography>
                   <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
-                    Creating website layout/user interfaces by using standard HTML/CSS<br /> practices.
+                    Crafting dynamic websites with ReactJS expertise as a front-end developer.
                   </Typography>
                 </Stack>
 
@@ -124,10 +123,10 @@ const Servicepage = () => {
                 </Stack>
                 <Stack spacing={1} pt={3}>
                   <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
-                    Branding
+                    UI / UX Design
                   </Typography>
                   <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
-                    Conceptualizing visuals based on requirements. Creating images and layouts by hand or using design software.
+                    Leverage a human-centered design process to deliver an easy-to-use user interface and user experience.
                   </Typography>
                 </Stack>
 
