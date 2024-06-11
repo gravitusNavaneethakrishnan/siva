@@ -13,8 +13,8 @@ export default function Button(theme) {
           height: '47px',
           color: ' #E8E8E8',
           textAlign: 'center',
-          fontFamily: 'Libre Baskervville',
-          fontSize: '16px',
+          fontFamily: 'Poppins',
+          fontSize: '14px',
           fontWeight: '400',
           maxWidth: '237px', // Set a maximum width to maintain responsiveness
           // Media query for screens wider than a certain breakpoint (e.g., 768px)
@@ -27,6 +27,9 @@ export default function Button(theme) {
           '@media (min-width: 1200px)': {
             width: '273px', // Adjust the width for larger screens
           },
+          '&:hover': {
+            boxShadow: '0 0 15px 5px rgba(16, 0, 206, 0.4)', // Gradient glow effect on hover
+          },
         },
         viewprojectbutton: {
           borderRadius: '30px',
@@ -35,8 +38,8 @@ export default function Button(theme) {
           height: '47px',
           color: ' #E8E8E8',
           textAlign: 'center',
-          fontFamily: 'Libre Baskervville',
-          fontSize: '16px',
+          fontFamily: 'Poppins',
+          fontSize: '14px',
           fontWeight: '400',
           maxWidth: '237px', // Set a maximum width to maintain responsiveness
           // Media query for screens wider than a certain breakpoint (e.g., 768px)
@@ -59,7 +62,7 @@ export default function Button(theme) {
           height: '47px',
           color: ' #E8E8E8',
           textAlign: 'center',
-          fontFamily: 'Libre Baskervville',
+          fontFamily: 'Poppins',
           fontSize: '16px',
           fontWeight: '400',
           maxWidth: '159px', // Set a maximum width to maintain responsiveness
@@ -81,7 +84,7 @@ export default function Button(theme) {
           height: '40px',
           color: ' #E8E8E8',
           textAlign: 'center',
-          fontFamily: 'Libre Baskervville',
+          fontFamily: 'Poppins',
           fontSize: '14px',
           fontWeight: '400',
           maxWidth: '190px', // Set a maximum width to maintain responsiveness
@@ -102,7 +105,7 @@ export default function Button(theme) {
           height: '40px',
           color: ' #E8E8E8',
           textAlign: 'center',
-          fontFamily: 'Libre Baskervville',
+          fontFamily: 'Poppins',
           fontSize: '16px',
           fontWeight: '400',
           maxWidth: '143px', // Set a maximum width to maintain responsiveness

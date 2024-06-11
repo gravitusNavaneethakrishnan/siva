@@ -3,27 +3,28 @@ import { Navigate, useRoutes } from 'react-router-dom';
 import DashboardLayout from './layouts/dashboard';
 import SimpleLayout from './layouts/simple';
 //
+import Index from './pages';
+import Aboutpage from './pages/Aboutpage';
 import BlogPage from './pages/BlogPage';
-import UserPage from './pages/UserPage';
+import Contactpage from './pages/Contactpage';
+import GravitusApp from './pages/GravitusApp';
+import GravitusWeb from './pages/GravitusWeb';
 import LoginPage from './pages/LoginPage';
 import Page404 from './pages/Page404';
 import ProductsPage from './pages/ProductsPage';
-import DashboardAppPage from './pages/DashboardAppPage';
-import Homepage from './pages/Homepage';
-import Aboutpage from './pages/Aboutpage';
-import Index from './pages';
-import Viewprojectpage from './pages/Viewprojectpage';
+import Projectpage from './pages/Projectpage';
+import Servicepage from './pages/Servicepage';
 
 // ----------------------------------------------------------------------
 
 export default function Router() {
   const routes = useRoutes([
-    
+
     {
-      path: '/siva',
+      path: '/Sivakamu',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/siva/portfolio" />, index: true },
+        { element: <Navigate to="/Sivakamu/portfolio" />, index: true },
         { path: 'portfolio', element: <Index /> },
         { path: 'user', element: <Aboutpage /> },
         { path: 'products', element: <ProductsPage /> },
@@ -31,17 +32,37 @@ export default function Router() {
       ],
     },
     {
+      path: 'about',
+      element: <Aboutpage />,
+    },
+    {
+      path: 'service',
+      element: <Servicepage />,
+    },
+    {
+      path: 'project',
+      element: <Projectpage />,
+    },
+    {
+      path: 'contact',
+      element: <Contactpage />,
+    },
+    {
       path: 'login',
       element: <LoginPage />,
     },
     {
-      path: 'projectview',
-      element: <Viewprojectpage />,
+      path: 'project_1',
+      element: <GravitusWeb />,
+    },
+    {
+      path: 'project_2',
+      element: <GravitusApp />,
     },
     {
       element: <SimpleLayout />,
       children: [
-        { element: <Navigate to="/siva/portfolio" />, index: true },
+        { element: <Navigate to="/Sivakamu/portfolio" />, index: true },
         { path: '404', element: <Page404 /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],

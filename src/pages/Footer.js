@@ -1,12 +1,11 @@
 import { Grid, Stack, Typography } from '@mui/material';
-import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 import sivakamu from '../images/Sivakamu.svg';
-import dribble from '../images/dribble.svg';
-import Linkedin from '../images/linkedin.svg';
 import Behance from '../images/behance.svg';
+import dribble from '../images/dribble.svg';
 import Instagram from '../images/instagram.svg';
+import Linkedin from '../images/linkedin.svg';
 
 const Footer = () => {
   return (
@@ -49,7 +48,7 @@ const Footer = () => {
               offset={-100}
               duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
               <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
-                Services
+                Disciplines
               </Typography>
             </ScrollLink>
 
@@ -83,7 +82,7 @@ const Footer = () => {
             </a>
           </Stack>
           <Typography pt={1} variant='subbody' sx={{ color: '#D0D0D0' }} textAlign={{ lg: 'end', md: 'end' }}>
-            +91 9787570649
+            +91 6374185363
           </Typography>
           <Typography variant='subbody' sx={{ color: '#D0D0D0' }} textAlign={{ lg: 'end', md: 'end' }}>
             sivakamu.mariselvam@gmail.com

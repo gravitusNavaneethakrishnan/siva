@@ -1,6 +1,6 @@
 @media (max-width: 1280px) {
     .element {
-         font-size: 56px;
+        font-size: 56px;
     }
 }
 
@@ -15,7 +15,7 @@
         font-size: 2rem;
     }
 }
- 
+
 @media (max-width: 768px) {
     .element {
         font-size: 44px;
@@ -30,6 +30,37 @@
 
 @media (max-width: 1980px) {
     .carousel {
-         font-size: 56px;
+        font-size: 56px;
     }
+}
+
+.view-project-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.view-project-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(121, 121, 121);
+    /* Change this color to your desired hover color */
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.view-project-btn:hover::before {
+    transform: scaleX(1);
+}
+
+/* Optional: Adjust text color on hover */
+.view-project-btn:hover {
+    color: white;
+    /* Change this to your desired text color on hover */
 }

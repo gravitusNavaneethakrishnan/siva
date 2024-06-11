@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button, Card, Grid, Stack, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ const Projectpage = () => {
             Featured Projects
           </Typography>
           <Typography variant='body1' sx={{ color: '#E8E8E8', textAlign: 'center', justifyContent: 'center' }}>
-            I’m a UI/UX designer turned software developer with 3+ years of experience.
+            Discover Excellence Through My Featured Projects
           </Typography>
         </Stack>
       </Grid>
@@ -69,14 +68,14 @@ const Projectpage = () => {
               </Stack>
               <Stack spacing={1} pt={3}>
                 <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
-                  Gravitus
+                  Gravitus Website
                 </Typography>
                 <Typography variant='body1' sx={{ color: '#FFC47D' }}>
-                  Ux designing, Developing, Flutter
+                  React js, Front-End, Redux
                 </Typography>
               </Stack>
               <Stack pt={2}>
-                <Button component={RouterLink} to="/projectview" disableRipple variant='viewprojectmainbutton'>
+                <Button component={RouterLink} to="/project_1" disableRipple variant='viewprojectmainbutton'>
                   View Projects
                 </Button>
               </Stack>
@@ -127,14 +126,14 @@ const Projectpage = () => {
               </Stack>
               <Stack spacing={1} pt={3}>
                 <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
-                  Gravitus
+                  Gravitus Mobile App
                 </Typography>
                 <Typography variant='body1' sx={{ color: '#FFC47D' }}>
-                  Ux designing, Developing, Flutter
+                  Flutter, Dart, Riverpod
                 </Typography>
               </Stack>
               <Stack pt={2}>
-                <Button component={RouterLink} to="/projectview" disableRipple variant='viewprojectmainbutton'>
+                <Button component={RouterLink} to="/project_2" disableRipple variant='viewprojectmainbutton'>
                   View Projects
                 </Button>
               </Stack>

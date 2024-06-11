@@ -10,7 +10,7 @@ const Aboutpage = () => {
       <Grid container spacing={2} pt={8} >
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <Stack pr={5} direction="column" spacing={3} alignItems={{ md: 'center', lg: 'flex-start' }} >
-            <Typography sx={{ color: '#E8E8E8' }} variant='h1'>
+            <Typography sx={{ color: '#E8E8E8' }} variant='h2'>
               Hi, I’m Sivakamu <br />
               Front-End Developer.
             </Typography>

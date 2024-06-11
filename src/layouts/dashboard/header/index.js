@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 // @mui
-import { styled } from '@mui/material/styles';
-import { Box, Stack, AppBar, Toolbar, Typography, ListItem, IconButton, Drawer } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Link as ScrollLink } from 'react-scroll';
 import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar, Box, Drawer, IconButton, ListItem, Stack, Toolbar, Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 // utils
 import { bgBlur } from '../../../utils/cssStyles';
 //
@@ -39,12 +39,22 @@ function Header() {
     setIsMobileDrawerOpen(!isMobileDrawerOpen);
   };
 
+  useEffect(() => {
+    scroll.scrollToTop({
+      duration: 0,
+    });
+  }, []);
+
   return (
     <>
       <StyledRoot>
         <StyledToolbar>
           <ListItem>
-            <ScrollLink to="home" duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }}>
+            <ScrollLink spy
+              smooth
+              offset={-100}
+              to="home"
+              duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }}>
               <img src={Sivakamu} alt='Sivakamu' />
             </ScrollLink>
           </ListItem>
@@ -89,7 +99,7 @@ function Header() {
                 offset={-100}
                 duration={500} style={{ textDecoration: 'none', cursor: 'pointer' }} >
                 <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
-                  Services
+                  Disciplines
                 </Typography>
               </ScrollLink>
             </ListItem>

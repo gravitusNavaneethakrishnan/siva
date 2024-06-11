@@ -51,7 +51,7 @@ const Servicepage = () => {
                   <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
                     Flutter Developer
                   </Typography>
-                  <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  <Typography variant='body2' sx={{ color: '#E8E8E8' }}>
                     Empowering Users Through Intuitive Interfaces: Front-End Flutter Developer Crafting Engaging Experiences
                   </Typography>
                 </Stack>
@@ -88,7 +88,7 @@ const Servicepage = () => {
                   <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
                     React js
                   </Typography>
-                  <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  <Typography variant='body2' sx={{ color: '#E8E8E8' }}>
                     Crafting dynamic websites with ReactJS expertise as a front-end developer.
                   </Typography>
                 </Stack>
@@ -125,7 +125,7 @@ const Servicepage = () => {
                   <Typography variant='title1' sx={{ color: '#E8E8E8' }}>
                     UI / UX Design
                   </Typography>
-                  <Typography variant='body1' sx={{ color: '#E8E8E8' }}>
+                  <Typography variant='body2' sx={{ color: '#E8E8E8' }}>
                     Leverage a human-centered design process to deliver an easy-to-use user interface and user experience.
                   </Typography>
                 </Stack>

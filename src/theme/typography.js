@@ -24,7 +24,7 @@ export function responsiveFontSizes({ sm, md, lg }) {
 
 // ----------------------------------------------------------------------
 
-const FONT_PRIMARY = 'Baskervville'; // Google Font
+const FONT_PRIMARY = 'Poppins'; // Google Font
 // const FONT_SECONDARY = 'CircularStd, sans-serif'; // Local Font
 
 const typography = {
@@ -39,41 +39,48 @@ const typography = {
   //   ...responsiveFontSizes({ sm: 52, md: 58, lg: 64 }),
   // },
   h2: {
-    fontWeight: 800,
+    fontFamily: 'Poppins',
+    fontWeight: 700,
     lineHeight: 64 / 48,
     fontSize: pxToRem(32),
     ...responsiveFontSizes({ sm: 40, md: 44, lg: 48 }),
   },
   h3: {
-    fontWeight: 700,
+    fontFamily: 'Poppins',
+    fontWeight: 600,
     lineHeight: 1.5,
     fontSize: pxToRem(24),
     ...responsiveFontSizes({ sm: 26, md: 30, lg: 32 }),
   },
   h4: {
-    fontWeight: 700,
+    fontFamily: 'Poppins',
+    fontWeight: 600,
     lineHeight: 1.5,
     fontSize: pxToRem(20),
     ...responsiveFontSizes({ sm: 20, md: 24, lg: 24 }),
   },
   h5: {
-    fontWeight: 700,
+    fontFamily: 'Poppins',
+    fontWeight: 550,
     lineHeight: 1.5,
     fontSize: pxToRem(18),
     ...responsiveFontSizes({ sm: 19, md: 20, lg: 20 }),
   },
   h6: {
-    fontWeight: 700,
+    fontFamily: 'Poppins',
+    fontWeight: 600,
     lineHeight: 28 / 18,
     fontSize: pxToRem(17),
     ...responsiveFontSizes({ sm: 18, md: 18, lg: 18 }),
   },
   subtitle1: {
+    fontFamily: 'Poppins',
     fontWeight: 600,
     lineHeight: 1.5,
     fontSize: pxToRem(16),
   },
   subtitle2: {
+    fontFamily: 'Poppins',
     fontWeight: 600,
     lineHeight: 22 / 14,
     fontSize: pxToRem(14),
@@ -83,20 +90,24 @@ const typography = {
   //   fontSize: pxToRem(16),
   // },
   body2: {
+    fontFamily: 'Poppins',
     lineHeight: 22 / 14,
     fontSize: pxToRem(14),
   },
   caption: {
+    fontFamily: 'Poppins',
     lineHeight: 1.5,
     fontSize: pxToRem(12),
   },
   overline: {
+    fontFamily: 'Poppins',
     fontWeight: 700,
     lineHeight: 1.5,
     fontSize: pxToRem(12),
     textTransform: 'uppercase',
   },
   button: {
+    fontFamily: 'Poppins',
     fontWeight: 700,
     lineHeight: 24 / 14,
     fontSize: pxToRem(14),
@@ -104,39 +115,48 @@ const typography = {
   },
   //
   body1: {
-    fontFamily: 'Baskervville',
+    fontFamily: 'Poppins',
     fontSize: pxToRem(16),
     ...responsiveFontSizes({ xs: 10, sm: 12, md: 14, lg: 16 }),
     // fontSize: '16px',
     fontWeight: '400',
   },
   body3: {
-    fontFamily: 'Baskervville',
+    fontFamily: 'Poppins',
     fontSize: pxToRem(16),
-    ...responsiveFontSizes({ xs: 12, sm: 14, md: 16, lg: 18 }),
+    ...responsiveFontSizes({ xs: 10, sm: 12, md: 14, lg: 16 }),
     // fontSize: '16px',
-    fontWeight: '500',
+    fontWeight: '400',
+    letterSpacing: '0.5px'
   },
   title1: {
-    fontFamily: 'Baskervville',
+    fontFamily: 'Poppins',
     fontSize: pxToRem(32),
-    ...responsiveFontSizes({ sm: 26, md: 28, lg: 32 }),
+    ...responsiveFontSizes({ sm: 18, md: 22, lg: 26 }),
     // fontSize: '32px',
-    fontWeight: '700',
+    fontWeight: '600',
   },
   h1: {
     fontSize: pxToRem(32),
     ...responsiveFontSizes({ sm: 40, md: 44, lg: 56 }),
     // fontSize:'56px',
-    fontFamily: 'Baskervville',
+    fontFamily: 'Poppins',
     fontWeight: '700',
   },
   subbody: {
     fontSize: pxToRem(24),
+    ...responsiveFontSizes({ sm: 10, md: 12, lg: 16 }),
+    // fontSize:'56px',
+    fontFamily: 'Poppins',
+    fontWeight: '600',
+  },
+  subbody1: {
+    fontSize: pxToRem(24),
     ...responsiveFontSizes({ sm: 16, md: 20, lg: 24 }),
     // fontSize:'56px',
-    fontFamily: 'Baskervville',
+    fontFamily: 'Poppins',
     fontWeight: '700',
+
   }
 };
 
