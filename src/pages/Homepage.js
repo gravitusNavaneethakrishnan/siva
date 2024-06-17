@@ -91,19 +91,19 @@ const Homepage = () => {
           },
         }}>
         <Stack alignItems='center' textAlign='center'>
-          <Stack direction='row' spacing={4} alignItems='center' textAlign='center'>
+          <Stack direction='row' spacing={{ xs: 0.5, sm: 1, md: 1, lg: 2, xl: 2 }} alignItems='center' textAlign='center'>
 
             <Typography variant='h1' sx={{
               color: '#fff',
               fontSize: {
-                xs: '1rem',   // For extra-small devices (phones)
-                sm: '1.5rem', // For small devices (tablets)
-                md: '2rem',   // For medium devices (desktops)
-                lg: '3rem',   // For large devices (larger desktops)
-                xl: '4rem',   // For extra-large devices (larger desktops)
+                xs: '24px',   // For extra-small devices (phones)
+                sm: '32px', // For small devices (tablets)
+                md: '40px',   // For medium devices (desktops)
+                lg: '48px',   // For large devices (larger desktops)
+                xl: '56px',   // For extra-large devices (larger desktops)
               },
             }}>
-              Hello I
+              Hello, I
             </Typography>
 
 
@@ -116,13 +116,6 @@ const Homepage = () => {
                         color: '#FF8A00',
                         display: "block",
                         fontWeight: 700,
-                        fontSize: {
-                          xs: "16px",
-                          sm: "24px",
-                          md: "32px",
-                          lg: "56px",
-                          xl: "64px",
-                        },
                       }} className="element">
                         Design
                       </div>
@@ -130,13 +123,6 @@ const Homepage = () => {
                         color: '#FF8A00',
                         display: "block",
                         fontWeight: 700,
-                        fontSize: {
-                          xs: "16px",
-                          sm: "24px",
-                          md: "32px",
-                          lg: "56px",
-                          xl: "64px",
-                        },
                       }} className="element">
                         Develop
                       </div>
@@ -144,13 +130,6 @@ const Homepage = () => {
                         color: '#FF8A00',
                         display: "block",
                         fontWeight: 700,
-                        fontSize: {
-                          xs: "16px",
-                          sm: "24px",
-                          md: "24px",
-                          lg: "56px",
-                          xl: "64px",
-                        },
                       }} className="element">
                         Research
                       </div>
@@ -183,11 +162,11 @@ const Homepage = () => {
             sx={{
               color: '#fff',
               fontSize: {
-                xs: '1rem',   // For extra-small devices (phones)
-                sm: '1.5rem', // For small devices (tablets)
-                md: '2rem',   // For medium devices (desktops)
-                lg: '3rem',   // For large devices (larger desktops)
-                xl: '4rem',   // For extra-large devices (larger desktops)
+                xs: '24px',   // For extra-small devices (phones)
+                sm: '32px', // For small devices (tablets)
+                md: '40px',   // For medium devices (desktops)
+                lg: '48px',   // For large devices (larger desktops)
+                xl: '56px',   // For extra-large devices (larger desktops)
               },
             }}
           >

@@ -11,7 +11,7 @@ import sideimgright from '../images/sideimgright.svg';
 const StyledTextarea = styled(TextareaAutosize)(({ theme, error }) => ({
   backgroundColor: '#131313',
   color: '#D0D0D0',
-  fontFamily: 'Baskerville, serif',
+  fontFamily: 'Poppins',
   fontSize: '16px',
   letterSpacing: '0.5px',
   fontWeight: 400,
@@ -39,7 +39,7 @@ const StyledTextarea = styled(TextareaAutosize)(({ theme, error }) => ({
     fontSize: '16px',
     color: '#A0A0A0',
     fontWeight: 400,
-    fontFamily: 'Baskerville',
+    fontFamily: 'Poppins',
   },
 }));
 
